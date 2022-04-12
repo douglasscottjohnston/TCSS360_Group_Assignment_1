@@ -41,7 +41,7 @@ public class BoardGenerator {
     }
 
     /**
-     * generates the numbers in each node through a simple search
+     * Generates the numbers in each node through a simple search
      */
     private void generateNums() {
         for (int i = 0; i < myBoard.length; i++) {

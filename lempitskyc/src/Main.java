@@ -37,7 +37,7 @@ public class Main {
 		
 		for(int i = 0; i < theRows; i++) {
 			char[] row = SCAN.nextLine().toCharArray();
-				inputBoard[i] = row;
+			inputBoard[i] = row;
 		}
 		return inputBoard;
 	}

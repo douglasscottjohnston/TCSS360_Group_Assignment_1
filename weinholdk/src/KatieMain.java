@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class KatieMain {
     static int height = 1;
     static int width = 1;
     static int fieldTracker = 1;
@@ -9,21 +9,21 @@ public class Main {
 
     public static void main(String[] args) {
         while(SCANNER.hasNextInt()) {
-            Main.height = SCANNER.nextInt();
+            height = SCANNER.nextInt();
             width = SCANNER.nextInt();
-            char[][] minefield = new char[Main.height][width];
-            String[] height = new String[Main.height];
+            char[][] minefield = new char[height][width];
+            String[] rows = new String[height];
 
             SCANNER.nextLine();
 
             System.out.println();
             System.out.printf("Field #%d:", fieldTracker);
             System.out.println();
-            for (int i = 0; i < Main.height; i++) {
-                height[i] = SCANNER.nextLine();
+            for (int i = 0; i < height; i++) {
+                rows[i] = SCANNER.nextLine();
             }
-           System.out.print(new Minefield(minefield, height).toString());
-           fieldTracker++;
+            System.out.print(new Minefield(minefield, rows).toString());
+            fieldTracker++;
         }
         SCANNER.close();
     }

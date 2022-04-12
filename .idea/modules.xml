@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Douglas_project/Douglas_project.iml" filepath="$PROJECT_DIR$/Douglas_project/Douglas_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/johnstond/Douglas_project.iml" filepath="$PROJECT_DIR$/johnstond/Douglas_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TCSS360_Group_Assignment_1.iml" filepath="$PROJECT_DIR$/.idea/TCSS360_Group_Assignment_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inputgeneration/inputgeneration.iml" filepath="$PROJECT_DIR$/inputgeneration/inputgeneration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lempitskyc/lempitskyc.iml" filepath="$PROJECT_DIR$/lempitskyc/lempitskyc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/official/official.iml" filepath="$PROJECT_DIR$/official/official.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weinholdk/weinholdk.iml" filepath="$PROJECT_DIR$/weinholdk/weinholdk.iml" />
     </modules>
   </component>
 </project>

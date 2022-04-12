@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * The driver class for the minesweeper board generator
+ *
+ * @author Douglas Johnston
+ */
 public class Main {
     private static final Scanner SCAN = new Scanner(System.in);
     public static void main(String[] args) {

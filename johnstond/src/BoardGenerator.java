@@ -1,3 +1,8 @@
+/**
+ * The class that generates minesweeper boards
+ *
+ * @author Douglas Johnston
+ */
 public class BoardGenerator {
 
     static final char MINE = '*';

@@ -24,22 +24,10 @@ public class Minefield {
 
     private int mineCounter(int theHeight, int theWidth) {
         int mineCount = 0;
-        boolean top = false;
-        if (theHeight > 0) {
-            top = true;
-        }
-        boolean left = false;
-        if (theWidth > 0) {
-            left = true;
-        }
-        boolean right = false;
-        if (theWidth < myField[theHeight].length-1) {
-            right = true;
-        }
-        boolean bottom = false;
-        if (theHeight < myField.length-1) {
-            bottom = true;
-        }
+        boolean top = theHeight > 0;
+        boolean left = theWidth > 0;
+        boolean right = theWidth < myField[theHeight].length - 1;
+        boolean bottom = theHeight < myField.length - 1;
         if (top) {
             if (left) {
                 if (myField[theHeight-1][theWidth-1] == MINE) {

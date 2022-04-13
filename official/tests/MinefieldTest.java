@@ -1,16 +1,13 @@
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import MineSweeper.Minefield;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Scanner;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MinefieldTest {
 
@@ -32,7 +29,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(field);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertEquals(expectedField, mine.toString());
 
@@ -59,7 +56,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(field);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertNotEquals(expectedField, mine.toString());
 
@@ -77,7 +74,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(field);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertEquals(expectedField, mine.toString());
 
@@ -112,7 +109,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(field);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertEquals(expectedField, mine.toString());
 
@@ -147,7 +144,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(field);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertEquals(expectedField, mine.toString());
 
@@ -201,7 +198,7 @@ public class MinefieldTest {
 
         Minefield mine = new Minefield(input);
 
-        System.out.println(mine.toString());
+        System.out.println(mine);
 
         assertEquals(expected.toString(), mine.toString());
     }

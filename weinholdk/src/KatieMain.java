@@ -5,7 +5,7 @@ public class KatieMain {
     static int width = 1;
     static int fieldTracker = 1;
 
-    private static Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
         while(SCANNER.hasNextInt()) {
@@ -22,7 +22,7 @@ public class KatieMain {
             for (int i = 0; i < height; i++) {
                 rows[i] = SCANNER.nextLine();
             }
-            System.out.print(new Minefield(minefield, rows).toString());
+            System.out.print(new Minefield(minefield, rows));
             fieldTracker++;
         }
         SCANNER.close();

@@ -5,6 +5,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import MineSweeper.Minefield;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Scanner;
+
 public class MinefieldTest {
 
     /**
@@ -144,5 +150,29 @@ public class MinefieldTest {
 
         assertEquals(expectedField, mine.toString());
 
+    }
+
+    @Test
+    void test100Mines() throws IOException {
+        File f = new File("tests/100mines.txt");
+        Scanner s = new Scanner(f);
+
+        StringBuilder expected = new StringBuilder();
+
+        char[][] field = new char[100][100];
+        int i = 0;
+
+        while(s.hasNextLine() && i < 100) {
+            String next = s.nextLine();
+            field[i] = next.toCharArray();
+            expected.append(next);
+            expected.append("\n");
+            i++;
+        }
+
+
+        Minefield mine = new Minefield(field);
+
+        assertEquals(expected.toString(), mine.toString());
     }
 }

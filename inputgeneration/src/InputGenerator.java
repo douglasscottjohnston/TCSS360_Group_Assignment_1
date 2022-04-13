@@ -4,9 +4,13 @@ public class InputGenerator {
 		
 		final int rows = 100;
 		final int columns = 100;
-		final int bombPercentage = 100;
+		final int bombPercentage = 10;
+		char[][] out = createArray(rows, columns, bombPercentage);
 
-		MinesweeperBoard.printArr(createArray(rows, columns, bombPercentage));
+		for (int i = 0; i < out.length; i++) {
+			System.out.println(new String(out[i]));
+		}
+		System.out.print("0 0");
 
 		//rows columns bombPercentage random randomR randomC randomB
 	}

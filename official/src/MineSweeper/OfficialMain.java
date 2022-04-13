@@ -19,6 +19,7 @@ public class OfficialMain {
             generateOutput(createMinefield(rlen, clen), field);
             field++;
         }
+        SCAN.close();
         System.exit(0);
 
     }
@@ -31,7 +32,6 @@ public class OfficialMain {
      */
     private static Minefield createMinefield(final int theRLen, final int theCLen) {
         char[][] board = new char[theRLen][theCLen];
-        String[] rows = new String[theRLen];
 
         for (int i = 0; i < theRLen; i++) {
             board[i] = SCAN.nextLine().toCharArray();

@@ -37,6 +37,13 @@ public class Minefield {
         }
     }
 
+    /**
+     * Counts the adjacent mines around the node
+     *
+     * @param row
+     * @param col
+     * @return
+     */
     private int countAdjacentMines(int row, int col) {
         int adjMines = 0;
 

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import MineSweeper.Minefield;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -172,6 +173,34 @@ public class MinefieldTest {
 
 
         Minefield mine = new Minefield(field);
+
+        assertEquals(expected.toString(), mine.toString());
+    }
+
+    @Test
+    void test100x100field() throws FileNotFoundException {
+        File in = new File("tests/100x100.txt");
+        File exF = new File("tests/100x100expected.txt");
+        Scanner s = new Scanner(in);
+        char[][] input = new char[100][100];
+        StringBuilder expected = new StringBuilder();
+        int i = 0;
+
+        while(s.hasNextLine() && i < 100) {
+            input[i] = s.nextLine().toCharArray();
+            System.out.println(new String(input[i]));
+        }
+
+        s = new Scanner(exF);
+
+        while(s.hasNextLine()) {
+            expected.append(s.nextLine());
+            expected.append("\n");
+        }
+
+        Minefield mine = new Minefield(input);
+
+        System.out.println(mine.toString());
 
         assertEquals(expected.toString(), mine.toString());
     }

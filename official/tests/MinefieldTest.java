@@ -189,6 +189,7 @@ public class MinefieldTest {
         while(s.hasNextLine() && i < 100) {
             input[i] = s.nextLine().toCharArray();
             System.out.println(new String(input[i]));
+            i++;
         }
 
         s = new Scanner(exF);

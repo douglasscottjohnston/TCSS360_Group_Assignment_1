@@ -1,4 +1,4 @@
-import MineSweeper.Minefield;
+import Minesweeper.Minefield;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;

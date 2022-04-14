@@ -11,18 +11,18 @@ public class KatieMain {
         while(SCANNER.hasNextInt()) {
             height = SCANNER.nextInt();
             width = SCANNER.nextInt();
+            if(height == 0 && width == 0) {
+                System.exit(0);
+            }
             char[][] minefield = new char[height][width];
             String[] rows = new String[height];
 
             SCANNER.nextLine();
-
-            System.out.println();
-            System.out.printf("Field #%d:", fieldTracker);
-            System.out.println();
             for (int i = 0; i < height; i++) {
                 rows[i] = SCANNER.nextLine();
             }
-            System.out.print(new Minefield(minefield, rows));
+            System.out.printf("Field #%d:\n", fieldTracker);
+            System.out.println(new Minefield(minefield, rows));
             fieldTracker++;
         }
         SCANNER.close();

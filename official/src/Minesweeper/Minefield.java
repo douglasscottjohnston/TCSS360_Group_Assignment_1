@@ -1,4 +1,4 @@
-package MineSweeper;
+package Minesweeper;
 
 public class Minefield {
     static final char MINE = '*';

@@ -1,4 +1,4 @@
-package MineSweeper;
+import Minesweeper.Minefield;
 
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class OfficialMain {
         while(SCAN.hasNextInt() && (rlen != 0 && clen !=  0)) {
             rlen = SCAN.nextInt();
             clen = SCAN.nextInt();
+
             if(rlen == 0 && clen == 0) {
                 System.exit(0);
             }
